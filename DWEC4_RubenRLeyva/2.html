@@ -1,0 +1,75 @@
+<!DOCTYPE  html>
+<html>
+    <head>
+        <meta  http-equiv="content-type"  content="text/html;charset=utf-8">
+        <title>DWEC04 - Tienda Buy More (Compra Más)</title>
+        <script  type="text/javascript" src="2.js"></script>
+        <style type="text/css">
+                  
+            h2{
+                text-align: center;
+            }
+            
+            label{
+		width: 75px;
+		float:left;
+		margin-bottom:5px;
+                margin-right: 50px;
+            }
+            
+            input,select {
+		width:150px;
+		margin-bottom:5px;
+            }
+
+            fieldset{
+		background:#CCFF99;
+		width:350px;
+		margin: 0 auto;
+            }
+
+            .error{
+		border: solid 2px #FF0000;
+            }
+                        
+            footer, #resultado{
+                text-align: center;
+            }
+            
+            #botones{
+                margin: 0 10%;
+            }
+	</style>      
+    </head>
+	<body>
+            <h2>DWEC04 - Ejercicio 2</h2>
+            <fieldset>
+		<legend>- Sección de creación de productos -</legend>
+                    <form name="formulario" id="formulario" action="..." method="get">
+                        <label for="nombre">Nombre:</label>    
+                        <input type="text" name="nombre" id="nombre" maxlength="120" required pattern="^[a-zA-Z0-9áéíóóñÁÉÍÓÚÑ\s\.,;:]+$"/>
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="descripcion" name="descripcion" maxlength="1024"  rows="10" cols="50" required ></textarea>
+                        <label for="tipo">Tipo:</label>
+                        <select id="tipo">
+                            <option value="informatica">informática</option>
+                            <option value="alimentacion">alimentación</option>
+                            <option value="desconocido">desconocido</option>
+                        </select>
+                        <br/>
+                        <div id="botones">
+                            <input type="submit" name="enviar" id="enviar" value="Enviar" />
+                            <input type="submit" name="borrar" id="borrar" value="Borrar" />
+                        </div>
+                    </form> 
+            </fieldset>
+            <br/>
+            <fieldset>
+                <div id="resultado">Si al pulsar sobre 'Enviar' los datos son correcto este mensaje se actualizará.</div>
+            </fieldset>
+            <br/>
+            <footer>
+                <p>Rubén Ángel Rodriguez Leyva - DWEC</p>
+            </footer>
+	</body>
+</html>
